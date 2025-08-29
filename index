@@ -1,1 +1,65 @@
+<!doctype html>
+<h2 id="resume-title">Resume (요약)</h2>
+<table class="resume">
+<tbody>
+<tr>
+<th scope="row">경력</th>
+<td>
+<strong>한국지엠(주)</strong> · 품질담당 RedX Regional Master (1996.01 ~ 2025.08 현재)<br/>
+- 품질 개선 및 공정 혁신 활동 주도
+</td>
+</tr>
+<tr>
+<th scope="row">학력</th>
+<td>전북대학교 공과대학 정밀기계공학과 · 학사 (1995.02.22 졸업)</td>
+</tr>
+<tr>
+<th scope="row">기술</th>
+<td>품질 관리, RedX 기법, 제조 공정 최적화</td>
+</tr>
+<tr>
+<th scope="row">메일</th>
+<td>
+<a href="mailto:kitak.lee@kakao.com">kitak.lee@kakao.com</a> (개인)<br/>
+<a href="mailto:kitak.lee@gm.com">kitak.lee@gm.com</a> (회사)
+</td>
+</tr>
+</tbody>
+</table>
+</section>
 
+
+<section id="contact" aria-labelledby="contact-title">
+<h2 id="contact-title">Contact</h2>
+<div class="card pad">
+<p>협업/채용 관련 문의는 아래 메일로 부탁드립니다.</p>
+<p>
+<a class="btn" href="mailto:kitak.lee@kakao.com?subject=%5B포트폴리오%5D%20이기탁님께%20문의드립니다&body=안녕하세요%2C%20간단한%20소개와%20문의%20내용을%20작성해%20주세요.">개인 메일</a>
+<a class="btn" href="mailto:kitak.lee@gm.com?subject=%5B업무%20관련%5D%20이기탁님께%20문의드립니다">회사 메일</a>
+</p>
+</div>
+</section>
+</main>
+
+
+<footer>
+<div class="container">© <span id="year"></span> Kitak Lee — Made with HTML & CSS</div>
+</footer>
+
+
+<script>
+(function(){
+const key = 'theme';
+const saved = localStorage.getItem(key);
+if(saved){ document.documentElement.setAttribute('data-theme', saved); }
+const btn = document.getElementById('themeToggle');
+btn?.addEventListener('click', ()=>{
+const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+document.documentElement.setAttribute('data-theme', next);
+localStorage.setItem(key, next);
+});
+document.getElementById('year').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
